@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,100;0,500;1,100;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89eb0ff8c3.js" crossorigin="anonymous"></script>
+    <title>Ícaro Nascimento</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Imagens/foto-perfil.png" alt="Foto perfil" id="imagem-perfil">
+
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/icaronascimento-git" target="_blank">GitHub</a>
+            </li>
+            <li>
+               <a href="https://www.linkedin.com/in/icaro-gabriel-nascimento-silva-867335124/" target="_blank">Linkedim</a>
+            </li>
+            <li>
+                <a href="mailto:icaromts945@gmail.com" target="_blank">E-mail</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Ícaro Nascimento</h1>
+                <h5>Desenvolvedor de Software</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="gameicon">
+                <i class="fa-solid fa-gamepad fa-bounce" id="animation"></i>
+            </div>
+            <div id="sobre">
+                <h3>Olá! Bem vindo a minha página</h3>
+                <p>Sou Ícaro Nascimento, atualmente estudo Técnico em Análise e Desenvolvimento de Sistemas pelo IF Sul de Minas. 
+                    Estou no inicio da jornada em desenvolvimento, mas com muita dedicação e empenho tenho conseguido um bom desempenho.
+                    É um enorme prazer têlo em minha página, ah e não se esqueça, acesse meu GitHub que está logo acima e se conecte comigo 
+                    pelo Linkedim para irmos juntos nessa jornada.
+                </p>
+                <p>Um forte abraço e me encontro a disposição para contribuir caso precise.</p>
+            </div>
+            <div class="contato">
+                <form>
+                    <input type="text" placeholder="Qual seu nome?" name="nome" id="nome">
+                    <input type="text"  placeholder="Deixe aqui o seu contato" name="contato-email" id="contato-email">
+                </form>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Me envie uma mensagem" name="caixa-texto" id="caixa-texto">
+                    </div>
+                    <button id="Enviar-contato">Enviar contato!</button>
+                </form>
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <script>
+        function displayAbout() {
+            var gameicon = document.getElementById('animation');
+            gameicon.classList.toggle('rotate');
+        }
+    </script>
+    
+</body>
+</html>

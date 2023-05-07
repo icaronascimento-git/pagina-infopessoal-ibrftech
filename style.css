@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+#imagem-perfil {
+    max-width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-block-end: whitesmoke solid 5px;
+  
+}
+
+head ul {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color:cyan;
+    font-size: medium;
+    flex-direction: column;
+
+}
+
+a:hover {
+   color: black;
+}
+
+body {
+    /*background-image: url(./Imagens/fundo-imagen3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgba(65,143,222,1) 79% );
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-items: center;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.nome h1 {
+    font-size: 40px;
+    color:coral;
+}
+
+.nome h5 {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#sobre p {
+    color: white;
+}
+
+#gameicon {
+    font-size: 25px;
+    cursor: pointer;
+    animation: blink 2s steps(s, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 400ms;
+}
+
+#animation {
+    transition: 300ms;
+}
+
+#sobre h3 {
+    color: coral;
+}
+
+#sobre {
+    max-width: 600px;
+    margin: 0 auto;
+    color:black;
+    font-size: larger;
+}
+
+
+
+.contato {
+    width: 60%;
+    padding: 5px;
+    margin: 0 auto;
+    grid-row: auto;
+}
+
+.contato input {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px aqua solid;
+}
+
+#nome {
+    width: 49%;
+}
+
+#contato-email {
+    width: 50%;
+}
+
+#caixa-texto {
+    display: flex;
+    width: 100%;
+    padding: 5% 5%;
+    text-align: center;
+    font-size: medium;
+    background-color: transparent;
+    color: white;
+    border: 1px aqua solid;
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+#Enviar-contato {
+    padding: 5px 10px;
+    color: rgb(88, 188, 192);
+    background: linear-gradient(to right, gray 50%, black 50%);
+    font-size: medium;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    
+}
+
+#Enviar-contato:hover {
+   background-position: left bottom;
+}
+
+@media only screen and (max-width: 480px) {
+    .nome h1 {
+        font-size: 30px;
+    }
+
+    .nome h5 {
+        font-size: 15px;
+    }
+    
+    #sobre {
+        width: 80%;
+    }
+}
